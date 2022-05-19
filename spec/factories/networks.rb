@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :network do
-    name { "MyString" }
+    sequence(:name) { |n| "Network #{n}" }
+    
     state { "MyString" }
-    network_string { "MyString" }
   end
 end
