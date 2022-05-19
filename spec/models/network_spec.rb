@@ -7,4 +7,8 @@ RSpec.describe Network, type: :model do
 
     expect(network2).to_not be_valid
   end
+
+  context "can have many providers through memberships" do
+    it { should have_many(:providers) }
+  end
 end
